@@ -16,41 +16,43 @@ This project implements a Conditional Variational Autoencoder (CVAE) trained on 
 - CVAE with reparameterization trick
 - PyTorch-based implementation
 
-##  How to Run
-
+## ⚙ How to Run
 
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/CVAE-MNIST.git
+```
+2. Change directory into the project
+```bash
 cd CVAE-MNIST
-
-
-### 2. Install dependencies:
+```
+3. Install dependencies
 ```bash
-   pip install -r requirements.txt
-
-### 3. Train the model
+pip install -r requirements.txt
+```
+4. Train the model
 ```bash
-   python main.py
+python main.py
+```
+## Outputs:
+outputs/sample_epoch_5.png — Generated digits at epoch 5
 
-### 4. Outputs
-Reconstructed digits vs. original
+outputs/sample_epoch_10.png — Generated digits at epoch 10
 
-New digits generated from random latent vectors
+outputs/loss_plot.png — Training loss over epochs
 
-Digit 7 decoded as digit 2 (creative transformation)
+outputs/digit_transform_7_to_2.png — Creative twist result: 7 transformed into 2
 
-Loss curve saved as image
+ ## Evaluation
+ Visual Samples:
+Synthetic digits generated from latent space and labels
 
-###5. Evaluation
-# Visual Samples:
-outputs/sample_epoch_5.png
+ Reconstruction Loss:
+Binary cross-entropy + KL divergence
 
-outputs/sample_epoch_10.png
+ ## Creative Twist
+Use of the decoder with altered labels to transform one digit into another
 
-# Reconstruction Loss:
-outputs/loss_plot.png
-
-# modifying label:
-outputs/digit_transform_7_to_2.png: Original "7" reconstructed as "2" by modifying the label
+## License
+This project is released for academic purposes. Feel free to fork and build upon it.
 
