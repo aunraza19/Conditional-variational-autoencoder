@@ -16,21 +16,21 @@ This project implements a Conditional Variational Autoencoder (CVAE) trained on 
 - CVAE with reparameterization trick
 - PyTorch-based implementation
 
-## ⚙ How to Run
+## How to Run
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/CVAE-MNIST.git
+git clone https://github.com/aunraza19/Conditional-variational-autoencoder.git
 ```
-2. Change directory into the project
+### 2. Change directory into the project
 ```bash
 cd CVAE-MNIST
 ```
-3. Install dependencies
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-4. Train the model
+### 4. Train the model
 ```bash
 python main.py
 ```
